@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+    <title>Desafio B2B</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/Header/header.css">
+    <link rel="stylesheet" href="./assets/css/Main/main.css">
+    <link rel="stylesheet" href="./assets/css/Body/body.css">
+    <link rel="stylesheet" href="./assets/css/Grid/grid.css">
+    <link rel="stylesheet" href="./assets/css/Footer/footer.css">
+    <link rel="stylesheet" href="./assets/css/Buttons/buttons.css">
+    <link rel="stylesheet" href="./assets/css/Input/input.css">
+   
+</head>
+
+<body>
+    <section id="bn-top" class="row">
+        <p class="text-right">Anuncie sua solução no portal <strong> B2B Stack</strong></p>
+        <p class="text-left"><a class="btn__outline" href="#">Saiba mais</a></p>
+    </section>
+
+    <header id="topSite">
+    </header>
+
+    <main>
+        <nav id="bread">
+            <ul class="row">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Vendas</a></li>
+                <li><a href="#">CRM de vendas</a></li>
+                <li><a href="#">Ramper</a></li>
+            </ul>
+        </nav>
+        <div class="padding">
+            <div class="box">
+                <div>
+                    <div class="cover">
+                        <img src="https://tm.ibxk.com.br/2019/08/31/31122544259013.jpg?ims=1120x420"
+                            id="coverImage" alt="">
+                    </div>
+                    <div class="banner column">
+                        <figure>
+                        <img src="./assets/img/thumb.jpg">
+                        </figure>
+                        <div class="actions column">
+
+                            <div class="product-info">
+                                <h1 class="">
+                               <strong> Plipag</strong>
+                                <span class="stamp trusted" flow="top">
+                                    <em>
+                                    &nbsp;
+                                    </em>
+                                </span>
+                                </h1>
+                                <input type="hidden" id="produto" value="17605">
+                                <input type="hidden" id="usuario">
+                                <p class="">
+                                Desenvolvido por 
+                                <strong>
+                                   PLIPAG
+                                </strong>
+                                </p>
+                                <div class="rating">
+                                <div class="star starsize-20">
+                                    <div class="note" style="width:100.0%;">
+                                    &nbsp;
+                                    </div>
+                                </div>
+                                <strong class="none">
+                                    5.0 /5 
+                                </strong>
+                                </div>
+                            </div>
+
+                            <div class="banner__buttons">
+                                <a class="noLine" href="/avaliacao/cpf-cnpj">
+                                Avalie a solução
+                                </a>
+                                <a class="btn btn__primary"  href="#">
+                                Solicitar contato
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div id="contact-form">
+                    <form action="#">
+                        <div class="form-group">
+                            <div class="text-left ">
+                                <h3 class="form-title">Minhas informações</h3>
+                            </div>
+
+                            <div class="InputBox">
+                                <input type="name" required="required" maxlength="30" placeholder="name">
+                                <label for="name">Nome</label>
+                            </div>
+
+                            <div class="InputBox">
+                                <input type="email" maxlength="30" required="required" placeholder="email">
+                                <label for="email">E-mail corporativo</label>
+                            </div>
+                           
+                            <div class="InputBox">
+                                <input type="phone" id="phone" onkeyup="telefone_validation()" placeholder="phone" required="required" maxlength="14">
+                                <label for="phone">Telefone</label>
+                            </div>
+                            <div id="erroPhone" style="display: none;" >Você digitou um telefone invalido</div>
+                            <span class="form-error" id="phone-error"></span>
+                            <div class="InputBox">
+                                <input type="company" required="required" maxlength="30" placeholder="company">
+                                <label for="company">Empresa</label>
+                            </div>
+
+
+                            <div class="InputBox">
+                                <label for="bussines-type">Seguimento</label>
+                                <select id="bussines-type" required="required" class="" placeholder="Seguimento">
+                                    <option value="Textil">
+                                        Textil
+                                    </option>
+                                    <option value="Bancário">
+                                        Bancário
+                                    </option>
+                                    <option value="Ensino">
+                                        Ensino
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="InputBox">
+                                <label for="bussines-type">Faturamento</label>
+                                <select id="bussines-type" required="required" class="" placeholder="Faturamento">
+                                    <option value="Até $3600">
+                                        Até $3600
+                                    </option>
+                                    <option value="Até $10000">
+                                        Até $10000
+                                    </option>
+                                    <option value="Até $20000">
+                                        Até $20000
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn__primary" id="submitButton" required="required type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+    </footer>
+    <script src="./components/Header.js"></script>
+    <script src="./components/Footer.js"></script>
+    <script src="./js/main.js"></script>
+  
+</body>
+
+</html>

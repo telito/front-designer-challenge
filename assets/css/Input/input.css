@@ -1,0 +1,108 @@
+input {
+  border: 1px solid #c1cada;
+  padding: 0.8em 0.5em;
+  border-radius: 5px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  min-width: 250px;
+  background-color: #FFFFFF;
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+}
+
+input:not(:-moz-placeholder-shown) + label {
+  transform: translate(-2px, -30px) scale(1);
+  padding: 3 3px;
+  color: #04080e;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+input:not(:-ms-input-placeholder) + label {
+  transform: translate(-2px, -30px) scale(1);
+  padding: 3 3px;
+  color: #04080e;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  transform: translate(-2px, -30px) scale(1);
+  padding: 3 3px;
+  color: #04080e;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+input::-moz-placeholder {
+  opacity: 0;
+}
+
+input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+input::placeholder {
+  opacity: 0;
+}
+
+input:-moz-placeholder-shown + label {
+  transform-origin: left bottom;
+  transform: translate(0, 0) scale(1.5);
+  cursor: text;
+  overflow: hidden;
+  color: #c1cada;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+input:-ms-input-placeholder + label {
+  transform-origin: left bottom;
+  transform: translate(0, 0) scale(1.5);
+  cursor: text;
+  overflow: hidden;
+  color: #c1cada;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+input:placeholder-shown + label {
+  transform-origin: left bottom;
+  transform: translate(0, 0) scale(1.5);
+  cursor: text;
+  overflow: hidden;
+  color: #c1cada;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+input:focus + label::after,
+input + label::after {
+  content: " ";
+  height: 3px;
+  top: 50%;
+  left: -0.2em;
+  background: #fff;
+  right: -0.2em;
+  z-index: -1;
+  display: block;
+  position: absolute;
+}
+
+input:not(:-moz-placeholder-shown) + label::after {
+  left: -0.1em;
+  right: -0.1em;
+}
+
+input:not(:-ms-input-placeholder) + label::after {
+  left: -0.1em;
+  right: -0.1em;
+}
+
+input:not(:placeholder-shown) + label::after {
+  left: -0.1em;
+  right: -0.1em;
+}/*# sourceMappingURL=input.css.map */

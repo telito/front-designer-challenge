@@ -1,0 +1,21 @@
+*:where(:not(html, iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+strong {
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
